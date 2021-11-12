@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["title"] = "Cliente";
+}
+
+<div class="content" style="display: flex; flex-direction:column; align-items: center;">
+    <div style="width: 60%">
+        <div class="card card-primary">
+            <div class="card-header">
+                <h3 class="card-title">Novo Cliente</h3>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="inputNameCorporative">Razão Social</label>
+                    <input type="text" id="inputNameCorporative" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="inputFantasyName">Nome Fantasia</label>
+                    <input type="text" id="inputFantasyName" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label for="inputCnpj">CNPJ</label>
+                    <input type="number" id="inputCnpj" class="form-control" />
+                </div>
+                <div class="form-group row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-10">
+                                <label for="inputAddressPublic">Logradouro</label>
+                                <input type="text" id="inputAddressPublic" class="form-control" />
+                            </div>
+
+                            <div class="col-2">
+                                <label for="inputNumber">Número</label>
+                                <input type="number" id="inputNumber" class="form-control" />
+                            </div>
+                        </div>
+                        <div>
+                            <label for="inputDistrict">Bairro</label>
+                            <input type="text" id="inputDistrict" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputAddressAdd">Complemento</label>
+                        <textarea id="inputAddressAdd" class="form-control" rows="4"></textarea>
+
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-8">
+                        <label for="inputCity">Cidade</label>
+                        <input type="text" id="inputCity" class="form-control" />
+                    </div>
+                    <div class="col-4">
+                        <label for="inputCep">CEP</label>
+                        <input type="number" id="inputCep" class="form-control" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="justify-content: space-between">
+            <a href="#" class="btn btn-secondary">Cancelar</a>
+            <input type="submit" value="Cadastrar novo cliente" class="btn btn-success float-right">
+        </div>
+    </div>
+</div>
